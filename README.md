@@ -2,7 +2,7 @@
 Microsoft.EntityFrameworkCore  
 Microsoft.EntityFrameworkCore.Design  
 Microsoft.EntityFrameworkCore.SqlServer  
-Microsoft.EntityFrameworkCore.Tools (optional when used dotnet cli)
+Microsoft.EntityFrameworkCore.Tools (optional when used dotnet cli)  
 Microsoft.AspNetCore.Identity  
 Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
