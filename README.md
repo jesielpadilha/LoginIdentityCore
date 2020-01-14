@@ -129,4 +129,3 @@ Class with static parameters that represent the users categories. These data wil
     public IActionResult Privacy()
     {
         return View();
-    }
