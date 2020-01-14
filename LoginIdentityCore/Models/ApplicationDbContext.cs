@@ -14,6 +14,7 @@ namespace LoginIdentityCore.Models
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.Seed();
         }
     }
 }

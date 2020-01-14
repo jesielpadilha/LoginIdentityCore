@@ -21,6 +21,7 @@ namespace LoginIdentityCore.Controllers
             return View();
         }
 
+        [Authorize(Roles = UserCategory.AdminDescription)]
         public IActionResult Privacy()
         {
             return View();

@@ -24,5 +24,8 @@ namespace LoginIdentityCore.Models
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "The passawords aren't match")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        public bool IsAdmin { get; set; }
     }
 }

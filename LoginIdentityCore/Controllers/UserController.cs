@@ -55,6 +55,10 @@ namespace LoginIdentityCore.Controllers
                 var result = await _userManager.CreateAsync(user, userViewModel.Password);
                 if (result.Succeeded)
                 {
+                    if (userViewModel.IsAdmin)
+                    {
+                        await _userManager.AddToRoleAsync(user, UserCategory.AdminDescription);
+                    }
                     await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Index", "Home");
                 }
@@ -72,7 +76,7 @@ namespace LoginIdentityCore.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult AccessDinied()
+        public IActionResult AccessDenied()
         {
             return View();
         }
